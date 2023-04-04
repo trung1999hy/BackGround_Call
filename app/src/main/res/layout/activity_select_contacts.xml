@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui_new.select.SelectContactsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain_select"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_khung_app_bar"
+        app:layout_constraintBottom_toTopOf="@+id/guidline_select_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_back_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_round_arrow_back_ios_new"
+        app:layout_constraintStart_toStartOf="@id/constrain_select"
+        android:layout_marginStart="21dp"
+        app:layout_constraintBottom_toBottomOf="@id/constrain_select"
+        app:layout_constraintTop_toTopOf="@id/constrain_select"
+         />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Contacts"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/constrain_select"
+        app:layout_constraintEnd_toEndOf="@id/constrain_select"
+        app:layout_constraintStart_toStartOf="@id/constrain_select"
+        app:layout_constraintTop_toTopOf="@id/constrain_select" />
+
+    <TextView
+        android:id="@+id/tv_select_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="Select All"
+        android:textColor="#158AE6"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/constrain_select"
+        app:layout_constraintEnd_toEndOf="@id/constrain_select"
+        app:layout_constraintTop_toTopOf="@id/constrain_select" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_done"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_khung_btn"
+        android:text="Done"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_select_5"
+        app:layout_constraintEnd_toStartOf="@id/guideline_select_3"
+        app:layout_constraintStart_toEndOf="@id/guideine_select_2"
+        app:layout_constraintTop_toBottomOf="@id/guideline_select_4" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_select"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:listitem="@layout/item_select"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_done"
+        app:layout_constraintEnd_toEndOf="@+id/constrain_select"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constrain_select" />
+   <androidx.constraintlayout.widget.Guideline
+       android:id="@+id/guidline_select_1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       app:layout_constraintGuide_percent="0.08"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideine_select_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_select_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_select_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_select_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

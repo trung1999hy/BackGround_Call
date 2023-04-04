@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="18dp"
+    android:layout_marginTop="13dp"
+    android:layout_marginEnd="17dp"
+    android:background="@drawable/ic_khung_item"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_select"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginStart="9dp"
+            android:padding="8dp"
+            android:src="@drawable/img_item_contact"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:text="Emma"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/img_select"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_phone_number_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="15dp"
+            android:text="033 6555 568"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_select"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_select" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/check_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/select_check_box"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</LinearLayout>

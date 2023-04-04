@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_avatar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline81"
+        app:layout_constraintStart_toStartOf="@+id/guideline71"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar"
+        app:layout_constraintVertical_bias="0.09">
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_default_avatar" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_apply"
+        style="@style/ButtonDownload"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/apply"
+        app:layout_constraintBottom_toBottomOf="@+id/img_background"
+        app:layout_constraintDimensionRatio="5:1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline61"
+        app:layout_constraintStart_toStartOf="@+id/guideline51"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/action_bar2" />
+
+    <include
+        android:id="@+id/call_buttons"
+        layout="@layout/item_call_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btn_apply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone_number"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/TextName"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        app:autoSizeMaxTextSize="50sp"
+        app:autoSizeMinTextSize="20sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@+id/guideline17"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toBottomOf="@+id/cv_avatar" />
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        style="@style/TextPhone"
+        android:layout_width="0dp"
+        android:layout_height="25sp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/phone_number_sample"
+        app:autoSizeMaxTextSize="30sp"
+        app:autoSizeMinTextSize="15sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@+id/guideline17"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+</androidx.constraintlayout.widget.ConstraintLayout>

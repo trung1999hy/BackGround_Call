@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorWhite"
+            tools:context=".view.activity.setting.SettingActivity">
+
+            <include
+                android:id="@+id/action_bar"
+                layout="@layout/action_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/action_bar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/shape_radius4_white"
+                android:translationZ="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/action_bar">
+
+                <ImageView
+                    android:id="@+id/btn_home"
+                    style="@style/ImageViewSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="24dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/icon_home"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_flash"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                    app:layout_constraintStart_toStartOf="@+id/guideline14"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/btn_flash"
+                    style="@style/ImageViewSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:srcCompat="@drawable/icon_flash"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_callbototns"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                    app:layout_constraintStart_toStartOf="@+id/guideline14"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_home" />
+
+                <ImageView
+                    android:id="@+id/btn_callbototns"
+                    style="@style/ImageViewSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:srcCompat="@drawable/icon_call_button"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_privacy"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                    app:layout_constraintStart_toStartOf="@+id/guideline14"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_flash" />
+
+                <ImageView
+                    android:id="@+id/btn_privacy"
+                    style="@style/ImageViewSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:srcCompat="@drawable/icon_privacy"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_rate_app"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                    app:layout_constraintStart_toStartOf="@+id/guideline14"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_callbototns" />
+
+                <ImageView
+                    android:id="@+id/btn_rate_app"
+                    style="@style/ImageViewSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:srcCompat="@drawable/icon_rate_app"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_more_app"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                    app:layout_constraintStart_toStartOf="@+id/guideline14"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_privacy" />
+
+                <ImageView
+                    android:id="@+id/btn_more_app"
+                    style="@style/ImageViewSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:srcCompat="@drawable/icon_more_app"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_share"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                    app:layout_constraintStart_toStartOf="@+id/guideline14"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_rate_app" />
+
+                <ImageView
+                    android:id="@+id/btn_share"
+                    style="@style/ImageViewSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:srcCompat="@drawable/icon_share"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_about"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                    app:layout_constraintStart_toStartOf="@+id/guideline14"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_more_app" />
+
+                <ImageView
+                    android:id="@+id/btn_about"
+                    style="@style/ImageViewSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="24dp"
+                    app:srcCompat="@drawable/icon_about_app"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                    app:layout_constraintStart_toStartOf="@+id/guideline14"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_share" />
+
+                <TextView
+                    app:autoSizeTextType="uniform"
+                    android:id="@+id/tv_home"
+                    style="@style/TextSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_home"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline16"
+                    app:layout_constraintTop_toTopOf="@+id/btn_home" />
+
+                <TextView
+                    android:id="@+id/tv_flash"
+                    style="@style/TextSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/flash"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_flash"
+                    app:layout_constraintEnd_toEndOf="@+id/sw_flash"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline16"
+                    app:layout_constraintTop_toTopOf="@+id/btn_flash" />
+
+                <TextView
+                    android:id="@+id/tv_call_bottons"
+                    style="@style/TextSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/call_buttons"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_callbototns"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline16"
+                    app:layout_constraintTop_toTopOf="@+id/btn_callbototns" />
+
+                <TextView
+                    android:id="@+id/tv_privacy"
+                    style="@style/TextSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_privacy"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline16"
+                    app:layout_constraintTop_toTopOf="@+id/btn_privacy" />
+
+                <TextView
+                    android:id="@+id/tv_rate_app"
+                    style="@style/TextSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rate_app"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_rate_app"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline16"
+                    app:layout_constraintTop_toTopOf="@+id/btn_rate_app" />
+
+                <TextView
+                    android:id="@+id/tv_more_app"
+                    style="@style/TextSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/MoreApp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_more_app"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline16"
+                    app:layout_constraintTop_toTopOf="@+id/btn_more_app" />
+
+                <TextView
+                    android:id="@+id/tv_share"
+                    style="@style/TextSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_share"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline16"
+                    app:layout_constraintTop_toTopOf="@+id/btn_share"
+                    app:layout_constraintVertical_bias="0.268" />
+
+                <TextView
+                    android:id="@+id/tv_about"
+                    style="@style/TextSetting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_about"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline16"
+                    app:layout_constraintTop_toTopOf="@+id/btn_about" />
+
+                <Switch
+                    android:id="@+id/sw_flash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:button="@drawable/shape_switch"
+                    android:gravity="center"
+                    android:showText="false"
+                    android:thumb="@null"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="@+id/guideline16"
+                    app:layout_constraintTop_toTopOf="@+id/tv_flash" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.06" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.15" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

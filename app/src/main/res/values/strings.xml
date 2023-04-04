@@ -1,0 +1,37 @@
+<resources>
+    <string name="network">please check the network connection</string>
+    <string name="app_name_download">Emma</string>
+    <string name="number_download">033-6655-568</string>
+    <string name="app_name">Background Call</string>
+    <string name="MoreApp">More App</string>
+    <string name="download">Download</string>
+    <string name="apply">Apply</string>
+    <string name="permdesc_flashlight" translatable="false">Flashligh permission</string>
+    <string name="unknow">Unknow</string>
+    <string name="phone_number_sample" translatable="false">999 999 999</string>
+    <string name="network_error">Network error \n Tap to retry</string>
+    <string name="alert_title_permission">Permission Request</string>
+    <string name="alert_permission_message">This permission is needed</string>
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_cancel_button">Cancel</string>
+    <string name="no_app_found">No App Fround</string>
+    <string name="go_to_setting_message">This permission is needed, please go to setting and grant permission</string>
+    <string name="downloading">Downloading…</string>
+    <string name="comingCallChannelDescription">This is coming call channel description</string>
+    <string name="coming_call">Coming Call</string>
+    <string name="coming_call_channel_name">Coming call</string>
+    <string name="action_settings">Settings</string>
+    <string name="missing_call_from">Missing call from</string>
+    <string name="call_buttons">Call Buttons</string>
+    <string name="privacy">Privacy</string>
+    <string name="flash">Flash</string>
+    <string name="home">Home</string>
+    <string name="rate_app">Rate App</string>
+    <string name="share">Share</string>
+    <string name="about">About</string>
+    <string name="color_call">Color Call</string>
+    <string name="select_contacts">Select contacts</string>
+    <string name="call_error">Error!</string>
+    <string name="need_permission_call">Need Call Permission!</string>
+    <string name="message_purchase_one">%s</string>
+</resources>

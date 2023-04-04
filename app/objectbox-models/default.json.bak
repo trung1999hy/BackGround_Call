@@ -1,0 +1,103 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:4722802899272344189",
+      "lastPropertyId": "3:3109340559705058489",
+      "name": "Style",
+      "properties": [
+        {
+          "id": "1:4137902975126324035",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4928170042984589865",
+          "name": "background",
+          "type": 9
+        },
+        {
+          "id": "3:3109340559705058489",
+          "name": "downloaded",
+          "type": 1,
+          "flags": 4
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:6717367112370513002",
+      "lastPropertyId": "10:7628753320670808654",
+      "name": "Contact",
+      "properties": [
+        {
+          "id": "1:7908576607156440143",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:6527474375238024300",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:7927110155674336777",
+          "name": "phoneNumber",
+          "type": 9
+        },
+        {
+          "id": "6:821009368455586479",
+          "name": "checked",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "7:2951023645693751990",
+          "name": "avatar",
+          "type": 9
+        },
+        {
+          "id": "8:8392696836326978769",
+          "name": "video",
+          "type": 9
+        },
+        {
+          "id": "9:3839544720356925948",
+          "name": "image",
+          "type": 9
+        },
+        {
+          "id": "10:7628753320670808654",
+          "name": "imagepath",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:6717367112370513002",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [
+    7669231016120973812
+  ],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    3646941700352836073,
+    394908368237192750,
+    2212036207313212994,
+    1551233141984929329,
+    4000484847539851613,
+    1709428608030457566,
+    1242677108578580022
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

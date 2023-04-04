@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/colorcall2020/app/src/main/res/drawable/bg_ads.xml" value="0.2465" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/colorcall2020/app/src/main/res/drawable/check_flash.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/colorcall2020/app/src/main/res/layout/activity_download_new.xml" value="0.23802083333333332" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/colorcall2020/app/src/main/res/layout/activity_main_new.xml" value="0.2421875" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/colorcall2020/app/src/main/res/layout/item_native_admod.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/colorcall2020/app/src/main/res/layout/layout_setting.xml" value="0.23846153846153847" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
